@@ -1,0 +1,7 @@
+- name: Uninstall http
+  hosts: node1
+  tasks:
+  - name: UNInstall Http 
+    yum:
+      name: httpd
+      state: absent
