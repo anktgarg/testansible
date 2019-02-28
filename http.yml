@@ -1,0 +1,7 @@
+- name: Install http via ansible
+  hosts: all
+  tasks:
+  - name: Install Http 
+    yum:
+      name: httpd
+      state: latest
